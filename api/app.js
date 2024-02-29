@@ -7,10 +7,12 @@ const users = JSON.parse(
   readFileSync("./data/users.json", { encoding: "utf-8" })
 );
 
+// root route redirect
 app.get("/", (req, res) => {
   res.redirect("/api/users");
 });
 
+// route redirect
 app.get("/api", (req, res) => {
   res.redirect("/api/users");
 });
