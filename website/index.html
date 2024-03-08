@@ -31,10 +31,83 @@
   </head>
   <body>
     <header>
-      <h1 class="title">
-        <span class="title__main">Users API</span>
-        <span class="title__sub">The simplest API <span>ever</span></span>
-      </h1>
+      <div class="container">
+        <h1 class="title">
+          <span class="title__main">Users API</span>
+          <span class="title__sub">The simplest API <span>ever</span></span>
+        </h1>
+      </div>
     </header>
+    <main>
+      <section class="section section--light">
+        <div class="container">
+          <div class="content">
+            <h2 class="title__secondary">Overview</h2>
+            <p class="text">
+              Users API is a free and fake API that provides AI-generated users
+              data for when you are developing your app.
+            </p>
+            <p class="text">
+              Do not waste time creating a JSON file for testing purposes. Focus
+              on the code.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark">
+        <div class="container">
+          <div class="content">
+            <h2 class="title__secondary">Resources</h2>
+            <p class="text">Users API provides one type of resource</p>
+            <table>
+              <tr>
+                <td><a href="#" class="resource-link">/users</a></td>
+                <td>50 users</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--light">
+        <div class="container">
+          <div class="content">
+            <h2 class="title__secondary">Routes</h2>
+            <p class="text">
+              GET is the only HTTP method supported by Users API
+            </p>
+            <table>
+              <tr>
+                <td>GET</td>
+                <td><a href="#" class="resource-link">/users</a></td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td><a href="#" class="resource-link">/users/1</a></td>
+              </tr>
+            </table>
+            <p class="text">That's as simple as it gets.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__text">
+          Developed by
+          <a
+            href="https://marcodamianperez.github.io/"
+            target="_blank"
+            class="author"
+            >Marco Pérez</a
+          >
+          | <span id="year"></span>
+        </p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").innerText = new Date().getFullYear();
+    </script>
   </body>
 </html>
