@@ -34,19 +34,18 @@ header {
   background-color: $color-background-dark;
   color: white;
   height: 40vh;
-  position: relative;
 }
 
 .title {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-weight: 700;
+  justify-content: center;
+  gap: 2rem;
+  font-weight: 300;
   font-style: italic;
+  text-align: center;
 
   &__main {
     font-size: 2.5rem;
@@ -55,7 +54,6 @@ header {
     display: inline-block;
     background-color: $color-accent;
     padding: 1.4rem 3rem;
-    margin-bottom: 2rem;
     clip-path: polygon(7% 15%, 100% 0, 93% 85%, 0% 100%);
   }
 
@@ -74,27 +72,17 @@ header {
     font-size: 1.6rem;
     font-style: italic;
     text-transform: uppercase;
-    color: $color-primary;
-    display: inline-block;
-    background-color: $color-accent;
-    padding: 1rem 2rem;
-    clip-path: polygon(7% 15%, 100% 0, 93% 85%, 0% 100%);
-    width: fit-content;
+    color: $color-text-light;
+    text-decoration: underline;
+    text-decoration-color: #06d6a0;
+    text-decoration-thickness: 3px;
   }
 }
 
 .section {
   padding: 3rem 0;
-
-  &--light {
-    background-color: $color-background-light;
-    color: $color-text-light;
-  }
-
-  &--dark {
-    background-color: $color-background-dark;
-    color: $color-white;
-  }
+  background-color: $color-background-light;
+  color: $color-text-light;
 }
 
 .content {
