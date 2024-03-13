@@ -20,10 +20,7 @@ app.get("/api", (req, res) => {
 // get all users
 app.get("/api/users", (req, res) => {
   try {
-    res.status(200).send({
-      count: users.length,
-      users: users,
-    });
+    res.status(200).send(users);
   } catch (err) {
     res.status(500).send({ message: err.message });
   }
