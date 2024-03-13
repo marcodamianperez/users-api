@@ -3,6 +3,8 @@ import { readFileSync } from "node:fs";
 
 const app = express();
 
+app.set("json spaces", 4);
+
 const users = JSON.parse(
   readFileSync("./data/users.json", { encoding: "utf-8" })
 );
