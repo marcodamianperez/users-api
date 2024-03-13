@@ -33,21 +33,52 @@ body {
 header {
   background-color: $color-background-dark;
   color: white;
-  height: 40vh;
 }
 
-.title {
-  height: 40vh;
+.hero {
+  padding: 12rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  font-weight: 300;
+  gap: 3rem;
   font-style: italic;
   text-align: center;
 
-  &__main {
+  @media (width >= 450px) {
+    gap: 4rem;
+    padding: 14rem 0;
+  }
+
+  @media (width >= 450px) {
+    gap: 5rem;
+    padding: 15rem 0;
+  }
+}
+
+.btn {
+  background-color: #06d6a0;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 1.4rem;
+  padding: 0.8rem 2.5rem;
+  color: $color-black;
+  text-decoration: none;
+
+  @media (width >= 450px) {
+    font-size: 1.6rem;
+  }
+
+  @media (width >= 450px) {
+    font-size: 1.8rem;
+  }
+}
+
+.title {
+  font-style: italic;
+  font-weight: 700;
+
+  &--main {
     font-size: 2.5rem;
     text-transform: uppercase;
     color: $color-primary;
@@ -65,7 +96,7 @@ header {
     }
   }
 
-  &__sub {
+  &--sub {
     font-size: 1.6rem;
 
     @media (width >= 450px) {
@@ -84,7 +115,7 @@ header {
     }
   }
 
-  &__secondary {
+  &--secondary {
     font-size: 1.6rem;
     font-style: italic;
     text-transform: uppercase;
@@ -103,10 +134,23 @@ header {
   }
 }
 
-.section {
+main {
   padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   background-color: $color-background-light;
   color: $color-text-light;
+
+  @media (width >= 450px) {
+    padding: 5rem 0;
+    gap: 5rem;
+  }
+
+  @media (width >= 900px) {
+    padding: 7rem 0;
+    gap: 7rem;
+  }
 }
 
 .content {
@@ -139,6 +183,12 @@ table {
   @media (width >= 900px) {
     font-size: 1.8rem;
   }
+}
+
+.github-link,
+.github-link:link,
+.github-link:visited {
+  color: inherit;
 }
 
 .footer {
