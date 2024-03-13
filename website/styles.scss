@@ -55,10 +55,26 @@ header {
     background-color: $color-accent;
     padding: 1.4rem 3rem;
     clip-path: polygon(7% 15%, 100% 0, 93% 85%, 0% 100%);
+
+    @media (width >= 450px) {
+      font-size: 3rem;
+    }
+
+    @media (width >= 900px) {
+      font-size: 4rem;
+    }
   }
 
   &__sub {
     font-size: 1.6rem;
+
+    @media (width >= 450px) {
+      font-size: 1.8rem;
+    }
+
+    @media (width >= 900px) {
+      font-size: 2rem;
+    }
 
     span {
       text-decoration-line: underline;
@@ -76,6 +92,14 @@ header {
     text-decoration: underline;
     text-decoration-color: #06d6a0;
     text-decoration-thickness: 3px;
+
+    @media (width >= 450px) {
+      font-size: 2rem;
+    }
+
+    @media (width >= 900px) {
+      font-size: 2.2rem;
+    }
   }
 }
 
@@ -92,16 +116,29 @@ header {
 }
 
 .text {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+
+  @media (width >= 450px) {
+    font-size: 1.6rem;
+  }
 }
 
 .resource-link {
   color: inherit;
   text-decoration: underline;
+  font-weight: 700;
 }
 
 table {
   font-size: 1.4rem;
+
+  @media (width >= 450px) {
+    font-size: 1.6rem;
+  }
+
+  @media (width >= 900px) {
+    font-size: 1.8rem;
+  }
 }
 
 .footer {
