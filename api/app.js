@@ -1,8 +1,11 @@
 import express from "express";
 import { readFileSync } from "node:fs";
+import "dotenv/config";
+import cors from "cors";
 
 const app = express();
 
+app.use(cors());
 app.set("json spaces", 4);
 
 const users = JSON.parse(
@@ -46,6 +49,6 @@ app.get("*", (req, res) => {
   res.status(404).send({ message: "Resource not found" });
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log("Server listening and running on port 3000");
 });
