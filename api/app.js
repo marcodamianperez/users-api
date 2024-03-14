@@ -9,7 +9,7 @@ app.use(cors());
 app.set("json spaces", 4);
 
 const users = JSON.parse(
-  readFileSync("./data/users.json", { encoding: "utf-8" })
+  readFileSync("./public/users.json", { encoding: "utf-8" })
 );
 
 // root route redirect
@@ -52,3 +52,5 @@ app.get("*", (req, res) => {
 app.listen(process.env.PORT, () => {
   console.log("Server listening and running on port 3000");
 });
+
+export default app;
