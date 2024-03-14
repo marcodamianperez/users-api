@@ -52,5 +52,3 @@ app.get("*", (req, res) => {
 app.listen(process.env.PORT, () => {
   console.log("Server listening and running on port 3000");
 });
-
-export default app;

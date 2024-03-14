@@ -2,12 +2,11 @@
   "name": "users-api",
   "version": "1.0.0",
   "description": "users api",
-  "main": "./api/index.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node ./api/index.js",
-    "dev": "nodemon ./api/index.js",
-    "vercel-build": "echo hello"
+    "start": "node app.js",
+    "dev": "nodemon app"
   },
   "keywords": [
     "users",
